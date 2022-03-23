@@ -34,8 +34,8 @@ def sendEmail(message,password,server='smtp.gmail.com'):
     mail_server.close()
 def main():
     """Main function that you can edit followed by your condition"""
-    message=Message("sender@gmail.com","recipient@gmail.com","Subject","File(txt).txt")
-    message=addAttachment(message,"luffy.jpg.tiff")
+    message=Message("sender@gmail.com","recipient@gmail.com","Subject","Email content.txt")
+    message=addAttachment(message,"Attachment File Path")
     sendEmail(message,"*****")#Password for the email sender
     print(message)
 if main()=="__main__":
